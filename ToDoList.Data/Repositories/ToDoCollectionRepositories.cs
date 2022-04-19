@@ -30,7 +30,7 @@ namespace ToDoList.Data.Repositories
             WHERE Id = @Id
             ";
                 IDataParameter parameter = command.CreateParameter();
-                parameter.ParameterName = @"Id";
+                parameter.ParameterName = "@Id";
                 parameter.Value = id;
                 command.Parameters.Add(parameter);
                 
